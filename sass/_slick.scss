@@ -1,0 +1,58 @@
+.slick{
+&-initialized 
+&-slide {
+    margin: 0 20px;
+  }
+  &-arrow {
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1;
+    z-index: 5;
+    transition: all 0.2s linear;
+  }
+  &-arrow:hover {
+    background-color: $brown-color;
+    color: white;
+  }
+  &-prev {
+    left: -10px;
+  }
+  &-next {
+    right: -10px;
+  }
+  &-dots {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px;
+  }
+  &-dots button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+    background-color: transparent;
+    border: 2px solid #c0c0c0;
+    transition: all 0.2s linear;
+  }
+  &-dots &-active button {
+    background-color: $brown-color;
+  }
+  &-track{
+    padding-bottom: 50px;
+  }
+}

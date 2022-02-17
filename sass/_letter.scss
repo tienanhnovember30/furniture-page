@@ -1,0 +1,33 @@
+.letter {
+    margin-top: 87px;
+    background-color: #ede4de;
+    &-container {
+        padding-top: 55px;
+        padding-bottom: 62px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-left {
+        display: flex;
+        gap: 37px;
+        font-size: 24px;
+        width: 48%;
+        word-break: break-word;
+    }
+    &-form {
+        border-bottom: 2px solid $black-color;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        input {
+            width: 390px;
+            background-color: transparent;
+            border: 0;
+            font-size: 16px;
+        }
+    }
+    &-fontawesome {
+        color: #4e4b49;
+        font-size: 24px;
+        font-style: italic;
+    }
+}

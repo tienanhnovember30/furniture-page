@@ -1,0 +1,32 @@
+body {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $font-primary;
+}
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+.container-v1{
+    max-width: 1640px;
+    margin: auto;
+}
+.container-v2{
+    max-width: 1400px;
+    margin: auto;
+}
+.text-uppercase{
+    font-family: $font-primary;
+    text-transform: uppercase;
+}
+img {
+    display: block;
+    max-width: 100%;
+  }
+  
+li{
+    list-style: none;
+}
+.fas{
+    font-size: 16px;
+}

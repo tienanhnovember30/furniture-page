@@ -1,0 +1,29 @@
+.instagram {
+    margin: auto;
+    &-content {
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 40px;
+    }
+    &-title{
+        grid-column: span 2 / auto;
+    }
+    &-heading{
+        font-family: $font-primary;
+        font-size: 40px;
+        font-weight: 300;
+        padding-top: 35px;
+    }
+    &-text{
+        padding-top: 30px;
+        font-size: 18px;
+        color: #8e8e8e;
+        span{
+            color: $black-color;
+            font-weight: bold;
+          
+        }
+    }
+
+}
