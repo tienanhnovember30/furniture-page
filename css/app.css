@@ -77,6 +77,22 @@ li {
   font-size: 16px;
 }
 
+.text-heading {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 4px;
+  position: relative;
+}
+.text-heading::before {
+  content: "";
+  position: absolute;
+  left: 48.5%;
+  bottom: -15px;
+  height: 1px;
+  width: 68px;
+}
+
 .header-container {
   background-color: transparent;
   width: 100%;
@@ -91,6 +107,7 @@ li {
   height: 45px;
   padding-top: 10px;
   font-size: 16px;
+  display: flex;
 }
 .header-nav {
   background-image: url(/images/background.png);
@@ -300,20 +317,10 @@ li {
   font-weight: 400;
   letter-spacing: 3px;
 }
-.product-title h3 {
-  color: #000000;
-  padding-top: 90px;
-  text-align: center;
-  position: relative;
+.product-heading {
+  margin-bottom: 85px;
 }
-.product-title h3::after {
-  content: "";
-  position: absolute;
-  transform: translateX(660px);
-  left: 0;
-  bottom: -15px;
-  height: 1px;
-  width: 68px;
+.product-heading h3::before {
   background: #957051;
 }
 .product-list {
@@ -337,20 +344,10 @@ li {
   background-color: #f0f0f0;
   margin-top: 90px;
 }
-.category-heading h3 {
-  color: black;
+.category-heading {
   padding-top: 90px;
-  text-align: center;
-  position: relative;
 }
-.category-heading h3::after {
-  content: "";
-  position: absolute;
-  transform: translateX(920px);
-  bottom: -10px;
-  left: 0;
-  height: 1px;
-  width: 68px;
+.category-heading h3::before {
   background: #957051;
 }
 .category-slider {
@@ -361,6 +358,9 @@ li {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.category-slider .slick-next, .category-slider .slick-prev {
+  top: 42%;
 }
 .category-image {
   height: auto;
@@ -435,19 +435,99 @@ li {
 .letter-fontawesome {
   color: #4e4b49;
   font-size: 24px;
-  font-style: italic;
+  font-weight: 100 !important;
+}
+.letter-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 .inspration {
   padding: 70px;
 }
 .inspration-heading {
-  text-align: center;
+  margin-bottom: 85px;
+}
+.inspration-heading h3::before {
+  background: #957051;
+}
+.inspration-content {
+  padding-top: 38px;
+}
+.inspration-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 50px;
+}
+.inspration-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 1px;
+  width: 51px;
+  background: #e5b72d;
+}
+.inspration-text {
+  color: #a6a6a6;
+  margin-bottom: 30px;
+  word-break: break-word;
+}
+.inspration-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.inspration-link a {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.inspration-link a i {
+  margin-left: 5px;
+}
+.inspration-link a:hover {
+  color: #e5b72d;
+  position: relative;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.inspration-link a:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 1px;
+  width: 100%;
+  background: #e5b72d;
+}
+.inspration-link a:hover::before:hover {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.inspration-slider .slick-dots .slick-active button {
+  background-color: #e5b72d;
+}
+.inspration-slider .slick-next,
+.inspration-slider .slick-prev {
+  top: 30%;
 }
 
 .partner {
   padding-top: 60px;
   border-top: 1px solid #e0e0e0;
+}
+.partner-slider .slick-next, .partner-slider .slick-prev {
+  top: 25%;
+  background-color: transparent;
+}
+.partner-slider .slick-next:hover, .partner-slider .slick-prev:hover {
+  background-color: transparent;
+  color: #000000;
 }
 
 .slick-initialized .slick-slide {

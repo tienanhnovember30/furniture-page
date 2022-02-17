@@ -1,21 +1,12 @@
 .category {
     background-color: #f0f0f0;
     margin-top: 90px;
-    &-heading h3 {
-        color: black;
+    &-heading {
         padding-top: 90px;
-        text-align: center;
-        position: relative;
-        &::after {
-            content: "";
-            position: absolute;
-            transform: translateX(920px);
-            bottom: -10px;
-            left: 0;
-            height: 1px;
-            width: 68px;
-            background: #957051;
-            
+        h3 {
+            &::before {
+                background: #957051;
+            }
         }
     }
 
@@ -23,11 +14,13 @@
         padding-top: 90px;
         padding-bottom: 100px;
         margin: auto;
-        // display: flex !important;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         text-align: center;
+        .slick-next, .slick-prev{
+            top: 42%;
+        }
 
     }
 
@@ -36,14 +29,12 @@
         margin-bottom: 20px;
         img {
             object-fit: cover;
-            width: 100%; 
+            width: 100%;
             height: 100%;
         }
     }
     &-title {
         font-size: 20px;
-        color: $black-color ;
-        
+        color: $black-color;
     }
 }
-

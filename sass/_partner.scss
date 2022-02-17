@@ -1,4 +1,14 @@
 .partner{
     padding-top: 60px;
     border-top:1px solid #e0e0e0 ;
+    &-slider{
+        .slick-next, .slick-prev{
+            top: 25%;
+            background-color: transparent;
+            &:hover{
+                background-color: transparent;
+                color:$black-color;
+            }
+        }
+    }
 }

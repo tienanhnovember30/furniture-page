@@ -1,7 +1,78 @@
-.inspration{
+.inspration {
     padding: 70px;
-    &-heading{
-        text-align: center;
+    &-heading {
+        margin-bottom: 85px;
+        h3 {
+            &::before {
+                background: #957051;
+            }
+        }
     }
+    &-content {
+        padding-top: 38px;
+    }
+    &-title {
+        font-family: $font-primary;
+        font-size: 20px;
+        font-weight: 600;
+        position: relative;
+        margin-bottom: 50px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            height: 1px;
+            width: 51px;
+            background: #e5b72d;
+        }
+    }
+    &-text {
+        color: #a6a6a6;
+        margin-bottom: 30px;
+        word-break: break-word;
+    }
+    &-link {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        a {
+            font-family: $font-primary;
+            color: $black-color;
+            font-size: 16px;
+            font-weight: 600;
 
+            i {
+                margin-left: 5px;
+            }
+            &:hover {
+                color: #e5b72d;
+                position: relative;
+                -webkit-transition: 0.5s all ease;
+                transition: 0.5s all ease;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -15px;
+                    height: 1px;
+                    width: 100%;
+                    background: #e5b72d;
+                    &:hover {
+                        -webkit-transition: 0.5s all ease;
+                        transition: 0.5s all ease;
+                    }
+                }
+            }
+        }
+    }
+    &-slider {
+        .slick-dots .slick-active button {
+            background-color: #e5b72d;
+        }
+        .slick-next,
+        .slick-prev {
+            top: 30%;
+        }
+    }
 }

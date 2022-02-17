@@ -1,6 +1,6 @@
-.product{
+.product {
     padding-top: 75px;
-    &-title{
+    &-title {
         text-align: center;
         color: $black-color;
         padding-bottom: 75px;
@@ -9,37 +9,29 @@
         font-weight: 400;
         letter-spacing: 3px;
     }
-    &-title h3 {
-        color: $black-color;
-        padding-top: 90px;
-        text-align: center;
-        position: relative;
-        &::after {
-            content: "";
-            position: absolute;
-            transform: translateX(660px);
-            left: 0;
-            bottom: -15px;
-            height: 1px;
-            width: 68px;
-            background: #957051;
-            
-        }}
-    &-list{
+    &-heading {
+        margin-bottom: 85px;
+        h3 {
+            &::before {
+                background: #957051;
+            }
+        }
+    }
+    &-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 40px;
         color: $black-color;
-
     }
-    &-item--content{
+    &-item--content {
         padding-top: 25px;
     }
-    &-text{
+    &-text {
         color: #868686;
     }
-    &-price{
+    &-price {
         font-weight: bold;
         padding-top: 15px;
     }
+   
 }
